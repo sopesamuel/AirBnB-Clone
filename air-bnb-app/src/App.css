@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 
-body{
-  width: auto;
-}
+
+
 .nav{
   display: flex;
   align-items: center;
@@ -25,30 +24,29 @@ body{
 }
 
 .card h2{
-  font-size: 55px ;
+  font-size: 65px ;
+  font-weight: 900;
 font-family: 'Poppins';
-margin-left: 45px ;
+margin-left: 95px ;
+margin-top: 10px;
 }
 
 .card p{
   font-family: 'Poppins';
-  margin-left: 50px ;
-  margin-top: -35px;
+  margin-left: 100px ;
+  margin-top: 15px;
   font-size: 21px;
   width: 380px;
   line-height: 28px;
 }
 
-
 .player1{
-  position: relative;
-  display: inline-flex;
-
+  margin-top: 10px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.katie{
-  display: block;
-}
 .katie-text{
   background-color: white ;
   width: 81px;
@@ -56,7 +54,7 @@ margin-left: 45px ;
   padding: 10px;
   border-radius: 5px ;
   position: absolute;
-  margin-top: -350px;
+  margin-top: -330px;
   margin-left: 45px;
 }
 
@@ -66,10 +64,21 @@ margin-left: 45px ;
   margin-left: 35px;
 }
 
+.props-img{
+  position:inherit;
+  display: flex;
+  width: 100%;
+}
+
+.prop-img{
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+}
 
 .katie-star-text{
   display: block;
-  
   align-items: center;
 }
 .katie-star-text p{

@@ -5,15 +5,13 @@ import Card from "/Users/mac/Documents/Air-BNB Clone/air-bnb-app/src/Components/
 import Player1 from "./Components/Player1.js"
 import Data from "/Users/mac/Documents/Air-BNB Clone/air-bnb-app/src/Components/Data.js"
 
+
 export default function App() {
 const players = Data.map(items =>{
-  return (
+  return ( 
     <Player1 
-    title = {items.title}
-    rating ={items.stats.rating}
-    reviewCount = {items.stats.reviewCount}
-    location = {items.location}
-    price = {items.price}
+    key = {items.id}
+  item = {items}
     />
   )
 })
@@ -22,11 +20,13 @@ const players = Data.map(items =>{
     <div className="App">
       <Navbar />
     <Card />
+    <div className="player1">
     {players}
+      </div>
     </div>
   )
 }
 
 
-
+ 
 
